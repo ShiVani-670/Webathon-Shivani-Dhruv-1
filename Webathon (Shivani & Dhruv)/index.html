@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee & Brew</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <!-- login -->
+    <div class="container-fluid" style="background-color: #432818;">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="
+    margin-left: 1350px; padding:5px; font-size: 25px; font-weight: bold; background-color:black; border: 2px solid white; color: aliceblue;">
+            Login
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade"
+        style="background: linear-gradient(to right,#f0ead2,#c38e70,#d69f7e,#9c6644, #8a5a44, #432818);"
+        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content"
+                style=" border: 2.5px solid white;   background-color:#e6b8a2; font-size: 20px; font-weight: bold; color: #130702;">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="font-size: 50px; font-weight: bold; color: white; text-align: center"
+                        id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form style="background-color:#e6b8a2">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label l1">Username</label>
+                            <input type="text" class="form-control"
+                                style="background-color:#e6b8a2; font-size: 20px; font-weight: bold; color: #130702;"
+                                placeholder="Enter Your Name" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label l1">Email address</label>
+                            <input type="email"
+                                style="background-color:#e6b8a2; font-size: 20px; font-weight: bold; color: #130702;"
+                                placeholder="Email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text" style="font-weight: bold;">We'll never share your
+                                email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label l1">Password</label>
+                            <input type="password"
+                                style="background-color: #e6b8a2; font-size: 20px; font-weight: bold; color: #130702;"
+                                placeholder="Password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" style="background-color: #e6b8a2; color: white;"
+                                class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label l1"
+                                style="background-color:#e6b8a2; font-size: 20px; font-weight: bold; color: #130702;"
+                                for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit"
+                            style="background-color:black; font-size: 20px; font-weight: bold; color: white;"
+                            class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                        style="background-color:black; font-size: 20px; font-weight: bold; color:white;"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color:black; font-size: 20px; font-weight: bold; color:white;">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all-container">
+        <h1 style="background-color:#432818; font-size: 50px; text-align: center; color: white; padding: 30px;">
+            𝕮𝖔𝖋𝖋𝖊𝖊 & 𝕭𝖗𝖊𝖜</h1>
+        <nav class="navbar navbar-expand-lg" id="nvbr" style="margin-top: -10px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="image/logo c2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offer">Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- homepage -->
+    <section id="home">
+        <div class="content">
+            <h3>Brewed with Passion. Served with Love <br />
+                Welcome to Coffee & Brew Café
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nbr
+                    <br>equi quisquam laboriosam aut reprehenderit vel placeat dignissimos.
+                </p>
+            </h3>
+            <button id="btn">Buy Now</button>
+        </div>
+
+    </section>
+
+    <!-- About us -->
+    <section id="about">
+        <div class="container" style="margin-top: 20px;">
+            <div class="heading">𝔸𝕓𝕠𝕦𝕥<span>𝕌𝕤</span></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="image/image.png" alt="About image" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Coffee is more than a beverage — it's a culture, a ritual, and a connection</h3>
+                    <p class="parsec1">
+                        At Bean & Brew Café, everything we do starts with a love for great coffee.
+                        Our story began in 2019, when two lifelong friends turned their shared passion for specialty
+                        coffee into a dream café.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus modi, magnam atque animi
+                        deleniti minima quisquam! Sapiente architecto, non corrupti rerum debitis qui amet vero deleniti
+                        rem iste consequatur enim?
+                    </p>
+                    <a href="about.html">
+                        <button id="about-btn"
+                            style="background-color: #432818; font-weight: bold; color: white; font-size: 20px; padding: 10px;border: 2px solid white;">Read
+                            More.</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- topcategaries -->
+    <section id="top-card" style=" margin-top: 100px; background-size: cover;">
+        <div class="heading2">𝕋𝕠𝕡<span>ℂ𝕒𝕥𝕠𝕘𝕒𝕣𝕚𝕖𝕤</span></div>
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="image/Doppio cd3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Doppio</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sed!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/cd 4 Cafe au Lait.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafe au Lait</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/cd 8 Mocha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/CAPPUCCINO-COFFEE cd1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="top-card" style="margin-bottom: 100px; margin-top: 100px; background-size: cover;">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="image/espresso-shot cd2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso Shot</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sed!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/Long-Black cd7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Long Black</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/turkish-coffee cd5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Turkish Coffee</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="image/recent1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dark Coffee</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+
+
+    <section id="menu">
+
+        <div class="heading3">
+            𝕆𝕦𝕣 <span>𝕄𝕖𝕟𝕦</span></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+            style="background-color:#432818; font-weight: bold; color: #130702; font-size: 20px;">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/3af7044a3c54f374b0b8cca68f43a854.jpg"
+                        class="card-img-top" alt="Cappuccino" />
+
+                    <div class="card-body">
+                        <h5 class="card-title">𝐂𝐀𝐏𝐏𝐔𝐂𝐂𝐈𝐍𝐎</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+
+                        <p>Lorem ipsum dolor sit amet consectetur afddf</p>
+                        <p class="card-text" style="font-size: 30px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/Long-Black.jpg" class="card-img-top"
+                        alt="Espresso" />
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">The purest coffee form served in a shot.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/IMG_5035.jpg" class="card-img-top"
+                        alt="Doppio" />
+                    <div class="card-body">
+                        <h5 class="card-title">Doppio</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star-half-stroke fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">Double the espresso, double the energy.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="image/recent1.jpg" class="card-img-top" alt="Long Black" />
+                    <div class="card-body">
+                        <h5 class="card-title">Long Black</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star-half-stroke fa-lg" style="color: #8c4831;"></i>
+
+                        <p class="card-text">Hot water topped with a double shot of espresso.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/tumblr_o1osnbtOHH1v64edwo1_1280.jpg"
+                        class="card-img-top" alt="Mocha" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">Coffee meets chocolate in a delightful blend.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/Cafe%CC%81-con-hielo.jpg"
+                        class="card-img-top" alt="Café con Hielo" />
+                    <div class="card-body">
+                        <h5 class="card-title">Café con Hielo</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">Classic Spanish iced coffee for warm days.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/Long-Black.jpg" class="card-img-top"
+                        alt="Long Black" />
+                    <div class="card-body">
+                        <h5 class="card-title">Long Black</h5>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">A second take on the hot and bold favorite.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://storypick.com/wp-content/uploads/2016/03/turkish-coffee.jpg" class="card-img-top"
+                        alt="Turkish Coffee" />
+                    <div class="card-body">
+                        <h5 class="card-title">Turkish</h5>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <i class="fa-regular fa-star fa-lg" style="color: #8c4831;"></i>
+                        <p class="card-text">Bold and traditional, brewed with care in a cezve.</p>
+                        <p class="card-text" style="font-size: 20px;">299/Rs <strike>780rs</strike></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="menu.html" style="justify-content: center; align-items: center; display: flex;">
+            <button id="about-btn"
+                style="background-color: #432818; font-weight: bold; color: white; font-size: 20px; padding: 10px; border: 2px solid black;">See
+                More</button>
+        </a>
+    </section>
+
+    <!-- testimonialos -->
+
+
+    <section id="offer" class="offer">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <!-- cstm crsl always in crsl iinner -->
+            <div class="carousel-inner custom-carousel">
+                <!-- data bs interval alwas in crsl item active -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="image/cnt1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5
+                            style="font-size: 70px; color: white; font-weight: bold; padding-bottom: 200px; text-align: right;">
+                            "Coffee is liquid hug for your brain."</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="image/cnt2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <i class="fa-solid fa-phone fa-2xl text-light" style="color: #1e3050; font-size: 70px;"></i>
+
+                        <h5 style="font-size: 100px; font-weight: bold; display: inline;">Order Now</h5>
+                        <p style="font-size: 70px; font-weight: bold; padding-bottom:400px ;">+92 1234567890</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="image/cnt5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 200px; font-weight: bold;">70% OFF</h5>
+                        <p style="font-size: 70px; font-weight: bold; padding-bottom:250px ;">If Order Within 30
+                            Minutes</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="image/cii.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="font-size: 100px; font-weight: bold; padding-bottom:250px ;">Hurry Up !</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <section id="testimonials">
+        <div class="container-fluid"
+            style="background: linear-gradient(to right,#f0ead2,#c38e70,#d69f7e,#9c6644, #8a5a44, #432818);">
+            <h1 class="text-center" style="color: #432818;">𝕋𝕖𝕤𝕥𝕚𝕞𝕠𝕟𝕚𝕒𝕝𝕤</h1>
+            <p class="text-center" style="font-size: 15px; font-weight: bold;color:white;">Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Vero nam voluptatibus
+                reprehenderit deserunt necessitatibus voluptas impedit optio Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Non fuga quis autem, ex id quaerat! Aliquid consequatur ut optio facilis autem
+                modi quis non odit ipsum vel. Voluptatem, vero et.</p>
+            <div class="row" style="height: 300px;">
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="image/t1.webp" class="user" alt="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates eos
+                            reprehenderit debitis miit amet consectetur adipisicing elit. Dolore aperia</blockquote>
+                        <h3>Tom</h3><span>Co-founder at ABC</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="image/t2.jpg" class="user" alt="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates eos
+                            reprehenderit ctetur adipisicing elit. Dolore aperiam
+                        </blockquote>
+                        <h3>Kelvin</h3><span>Co-founder at ABC</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="profile">
+                        <img src="image/t1.jpeg" class="user" alt="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates eos
+                            reprehenderit debitis minus iusto deleniti sequi, nam
+                            ionem dignissimos est!</blockquote>
+                        <h3>Jerry</h3><span>Co-founder at ABC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- footer -->
+
+    <footer>
+
+        <section id="contact"
+            style="background-color: #130702;">
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="display-4 text-uppercase text-center" style="font-weight: bold;">Contact Us</h1>
+                        <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
+                            quae
+                            nam quod aliquam necessitatibus officiis eum nulla quis id temporibus. Enim quasi saepe
+                            minus repellat, ab cupiditate! Libero, vero consequatur.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-location-dot fa-2xl text-light" style="color: #72ea3e;"
+                            aria-hidden="true"></i>
+                        <h3>Location</h3>
+                        <p>Area, City,Country</p>
+                        <i class="fa-solid fa-phone fa-2xl text-light" style="color: #1e3050;"></i>
+                        <h3>Call Us</h3>
+                        <p>+92 1234567890</p>
+                        <i class="fa-solid fa-envelope fa-2xl text-light" style="color: #2d5eb4;"></i>
+                        <h3>Email</h3>
+                        <p>Info@gmail.com</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="contactform">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <span id="lblResponse" class="tab-content"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="tbName" id="tbName" class="form-control my-2"
+                                        placeholder="Name">
+                                </div>
+                                <br>
+                                <div class="col-md-6">
+                                    <input type="text" name="tbEmail" id="tbEmail" class="form-control my-2"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="tbSunject" id="tbSubject" class="form-control my-2"
+                                        placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <textarea name="tbMessage" id="tbMessage" cols="30" row="10" cols="20"
+                                    class="form-control my-2" placeholder="Message"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" name="btnSendMsg" id="btnSendMsg" value="SendMessage"
+                                        class="btn btn-lg btn-submit btn-outline-light">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"
+                    style="margin: 100px; display: flex; justify-content: center;align-items: center;">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-fade fa-2xl"
+                            style="color:white; padding: 10px;"></i></a>
+
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-fade fa-2xl"
+                            style="color:white; padding: 10px;"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter fa-fade fa-2xl"
+                            style="color:white; padding: 10px;"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-fade fa-2xl"
+                            style="color: white; padding: 10px;"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
